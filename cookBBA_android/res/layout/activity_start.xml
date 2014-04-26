@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    
+    tools:context=".StartActivity" >
+    
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_marginRight="52dp"
+        android:background="@null"
+        android:src="@drawable/start_score" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginTop="34dp"
+        android:background="@null"
+        android:src="@drawable/start_htp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="200dp"
+        android:background="@null"
+        android:src="@drawable/start_start" />
+    
+       <jp.co.cayto.appc.sdk.android.AppCMoveIconView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            appc_skin_color="#88FF0000"
+            appc_text_color="magenta"
+            android:layout_alignParentBottom="true" />
+       
+</RelativeLayout>
