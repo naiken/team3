@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>915B7DC8-BBEA-4447-A7E9-69EA18E6791A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>colorBBA</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AAC528AB-3A25-4268-93CF-507B7D5277EA</key>
+		<string>https://github.com/naiken/team3</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>colorBBA_addAd/colorBBA.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AAC528AB-3A25-4268-93CF-507B7D5277EA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/naiken/team3</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AAC528AB-3A25-4268-93CF-507B7D5277EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AAC528AB-3A25-4268-93CF-507B7D5277EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>team3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

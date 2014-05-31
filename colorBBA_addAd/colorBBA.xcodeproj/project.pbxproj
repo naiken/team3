@@ -245,6 +245,7 @@
 		9AA731D1191B35DC00FF83D5 /* mainBBASprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA731D0191B35DC00FF83D5 /* mainBBASprite.m */; };
 		9AA731D4191B581800FF83D5 /* attackBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA731D3191B581800FF83D5 /* attackBtn.m */; };
 		9AA731DB191B803300FF83D5 /* vegitableEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA731DA191B803300FF83D5 /* vegitableEnemy.m */; };
+		9AA841EA193846C40056088D /* osususme.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA841E9193846C40056088D /* osususme.png */; };
 		9AD75BA41928C3A900471709 /* apple2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 9AD75B9D1928C3A900471709 /* apple2.bmp */; };
 		9AD75BA51928C3A900471709 /* eggplant2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 9AD75B9E1928C3A900471709 /* eggplant2.bmp */; };
 		9AD75BA61928C3A900471709 /* greenpepper2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 9AD75B9F1928C3A900471709 /* greenpepper2.bmp */; };
@@ -543,6 +544,7 @@
 		9AA731D3191B581800FF83D5 /* attackBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = attackBtn.m; sourceTree = "<group>"; };
 		9AA731D9191B803300FF83D5 /* vegitableEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vegitableEnemy.h; sourceTree = "<group>"; };
 		9AA731DA191B803300FF83D5 /* vegitableEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vegitableEnemy.m; sourceTree = "<group>"; };
+		9AA841E9193846C40056088D /* osususme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osususme.png; sourceTree = "<group>"; };
 		9AD75B9D1928C3A900471709 /* apple2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = apple2.bmp; sourceTree = "<group>"; };
 		9AD75B9E1928C3A900471709 /* eggplant2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = eggplant2.bmp; sourceTree = "<group>"; };
 		9AD75B9F1928C3A900471709 /* greenpepper2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = greenpepper2.bmp; sourceTree = "<group>"; };
@@ -955,6 +957,7 @@
 				9A38353919333047009644BD /* active_Btn_skill.png */,
 				9A973D5E193328990049CC0B /* active_Btn_attack.png */,
 				9A9D3DED192F34AC00D36EF8 /* select.png */,
+				9AA841E9193846C40056088D /* osususme.png */,
 				9A9D3DE7192F249700D36EF8 /* tutorial.png */,
 				9A9D3D6C192E30EE00D36EF8 /* 1_btn.png */,
 				9A9D3D6D192E30EE00D36EF8 /* 2_btn.png */,
@@ -1262,6 +1265,7 @@
 				9A9A77191936DE6F0035D908 /* appc_manga_footer@2x.png in Resources */,
 				9A9A77231936DE6F0035D908 /* appc_simple_app_pushed@2x.png in Resources */,
 				9A9A76C71936D0980035D908 /* gamefeat_popup_dl_B.png in Resources */,
+				9AA841EA193846C40056088D /* osususme.png in Resources */,
 				9A9A770C1936DE6F0035D908 /* appc_cutin2_close@2x.png in Resources */,
 				9A9A765A1936D0500035D908 /* CHANGELOG.md in Resources */,
 				9A9DA1B51918E1E0007720C4 /* composeBall.sks in Resources */,
@@ -1579,7 +1583,7 @@
 					./GameFeatKit.framework,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23D41CE9-F9C6-4440-9FA8-396469DDD09F";
+				PROVISIONING_PROFILE = "0EA91492-48EF-4419-AD9A-C6D4A9B48E89";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1612,7 +1616,7 @@
 					./GameFeatKit.framework,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23D41CE9-F9C6-4440-9FA8-396469DDD09F";
+				PROVISIONING_PROFILE = "0EA91492-48EF-4419-AD9A-C6D4A9B48E89";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};

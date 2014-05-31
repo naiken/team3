@@ -11,6 +11,8 @@
 #import "appCCloud.h"
 #import <GameFeatKit/GFController.h>
 #import <GameFeatKit/GFIconController.h>
+#import <GameFeatKit/GFView.h>
+
 @interface splashScreenViewController : UIViewController {
     
     GFIconController* _gfIconController;

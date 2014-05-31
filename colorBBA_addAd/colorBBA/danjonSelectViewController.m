@@ -56,6 +56,13 @@
     _sv.contentSize = _uv.bounds.size;
     [self.view addSubview:_sv];
     
+    UIButton* osusume = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    osusume.frame = CGRectMake(_uv.bounds.size.width * 0.65f, _uv.bounds.size.height * 0.04f, 50, 50);
+    
+    [osusume setBackgroundImage:[UIImage imageNamed:@"osususme.png"] forState:UIControlStateNormal];
+    [osusume addTarget:self action:@selector(osusume:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_uv addSubview:osusume];
     
     UIButton* tutorial = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     tutorial.frame = CGRectMake(_uv.bounds.size.width * 0.05f,
@@ -148,6 +155,21 @@
     [self presentViewController:tutorialVC animated:YES completion:NULL];
 }
 
+- (void)osusume:(UIButton*)osusumeBtn {
+    [appCCloud setupAppCWithMediaKey:@"1f647e09d853d170a8e6aa9128efe8bd6067de24" option:APPC_CLOUD_AD];
+    
+    /*
+     *closeBlock:メソッドで初期化を行うと、
+     *カットイン型ビューのクローズボタンタップ時の処理を記述できます。
+     *上記例では、ビューを破棄しています。
+     */
+    __block appCCutinView* cutin = [[appCCutinView alloc]
+                                    initWithViewController:self  closeBlock:^(id sender_){
+                                        [cutin removeFromSuperview];
+                                    }];
+    
+    [self.view addSubview:cutin];
+}
 
 #pragma mark - Navigation
 

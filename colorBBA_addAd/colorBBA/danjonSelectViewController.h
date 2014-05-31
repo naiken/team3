@@ -12,6 +12,7 @@
 #import "colorBBAMainMyScene.h"
 #import "danjonManager.h"
 #import "tutorialViewController.h"
+#import "appCCloud.h"
 
 @interface danjonSelectViewController : UIViewController <UIAlertViewDelegate>
 
