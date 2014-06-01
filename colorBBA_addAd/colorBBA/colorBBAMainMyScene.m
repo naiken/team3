@@ -233,7 +233,7 @@ static colorBBAMainMyScene* sharedColorBallMainMyScene;
                 _resultShiftNode = [SKSpriteNode spriteNodeWithImageNamed:@"clear"];
                 _resultShiftNode.xScale = 0.5f;
                 _resultShiftNode.yScale = 0.5f;
-                _resultShiftNode.position = _frameCenter;
+                _resultShiftNode.position = CGPointMake(_frameCenter.x, _frameCenter.y + 100);
                 _resultShiftNode.alpha = 0.0f;
                 
                 SKAction* fadeIn = [SKAction fadeInWithDuration:1.0f];
@@ -858,14 +858,94 @@ static colorBBAMainMyScene* sharedColorBallMainMyScene;
     
     if (distance <= 80) {
         realBBAPower = _bbaAttackPower * 1.4f;
+        
+        SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Copperplate-Bold"];
+        label.text = @"WONDERFUL!!";
+        label.fontColor = [UIColor blueColor];
+        label.fontSize = 30;
+        label.position = _frameCenter;
+        
+        SKAction* act1 = [SKAction scaleTo:1.4f duration:0.2f];
+        SKAction* act2 = [SKAction scaleTo:1.0f duration:0.2f];
+        SKAction* scaleSeq = [SKAction sequence:@[act1,act2]];
+        SKAction* repeatScale = [SKAction repeatAction:scaleSeq count:3];
+        SKAction* fadeOut = [SKAction fadeOutWithDuration:0.4f];
+        SKAction* seq = [SKAction sequence:@[repeatScale, fadeOut]];
+        
+        [label runAction:seq];
+        [self addChild:label];
+        
     } else if (distance > 80 && distance <= 150) {
         realBBAPower = _bbaAttackPower * 1.2f;
+        SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Copperplate-Bold"];
+        label.text = @"GREAT!";
+        label.fontColor = [UIColor greenColor];
+        label.fontSize = 40;
+        label.position = _frameCenter;
+        
+        SKAction* act1 = [SKAction scaleTo:1.5f duration:0.5f];
+        SKAction* fadeOut = [SKAction fadeOutWithDuration:0.5f];
+        SKAction* seq = [SKAction sequence:@[act1, fadeOut]];
+        
+        [label runAction:seq];
+        [self addChild:label];
+        
     } else if (distance > 150 && distance <= 180) {
         realBBAPower = _bbaAttackPower * 1.0f;
+        SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Copperplate-Bold"];
+        label.text = @"GOOD";
+        label.fontColor = [UIColor orangeColor];
+        label.fontSize = 40;
+        label.position = CGPointMake(-100, _frameCenter.y);
+        
+        SKAction* act1 = [SKAction moveTo:_frameCenter duration:0.4f];
+        SKAction* act2 = [SKAction moveTo:CGPointMake(CGRectGetMaxX(self.frame) + 100, _frameCenter.y) duration:0.4f];
+        act1.timingMode = SKActionTimingEaseOut;
+        act2.timingMode = SKActionTimingEaseIn;
+        SKAction* wait = [SKAction waitForDuration:0.3f];
+        SKAction* fadeOut = [SKAction fadeOutWithDuration:0.1f];
+        SKAction* seq = [SKAction sequence:@[act1, wait, act2, fadeOut]];
+        
+        [label runAction:seq];
+        [self addChild:label];
+        
+        
     } else if (distance > 200 && distance <= 230) {
         realBBAPower = _bbaAttackPower * 0.8f;
+        SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Copperplate-Bold"];
+        label.text = @"normal.";
+        label.fontColor = [UIColor brownColor];
+        label.fontSize = 40;
+        label.position = CGPointMake(_frameCenter.x, _frameCenter.y);
+        label.alpha = 0.0f;
+        
+        SKAction* fadeIn = [SKAction fadeInWithDuration:0.5f];
+        SKAction* wait = [SKAction waitForDuration:0.4f];
+        SKAction* fadeOut = [SKAction fadeOutWithDuration:0.5f];
+        fadeIn.timingMode = SKActionTimingEaseOut;
+        fadeOut.timingMode = SKActionTimingEaseIn;
+        
+        SKAction* seq = [SKAction sequence:@[fadeIn, wait, fadeOut]];
+        
+        [label runAction:seq];
+        [self addChild:label];
+        
     } else {
         realBBAPower = _bbaAttackPower * 0.6f;
+        
+        SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Copperplate-Bold"];
+        label.text = @"BAD...";
+        label.fontColor = [UIColor redColor];
+        label.fontSize = 40;
+        label.position = CGPointMake(_frameCenter.x, _frameCenter.y);
+        
+        SKAction* act1 = [SKAction moveTo:CGPointMake(_frameCenter.x, _frameCenter.y - 50) duration:0.8f];
+        act1.timingMode = SKActionTimingEaseOut;
+        SKAction* fadeOut = [SKAction fadeOutWithDuration:0.2f];
+        SKAction* seq = [SKAction sequence:@[act1, fadeOut]];
+        
+        [label runAction:seq];
+        [self addChild:label];
     }
     
     if (!_nowEnemyhp) {
